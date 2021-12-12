@@ -1,0 +1,154 @@
+/*
+    INPUT STYLE:
+    - text field
+    - add button
+        - pressed
+    DISPLAY LIST:
+    - checkbox
+        - hover
+        - done
+    - text
+        - done
+*/
+
+
+/* typography */
+@font-face {
+    font-family: ReadexPro-Light;
+    src: url(src/ReadexPro-Light.ttf);
+    font-weight: 300;
+  }
+@font-face {
+    font-family: ReadexPro-Medium;
+    src: url(src/ReadexPro-Medium.ttf);
+    font-weight: 500;
+}
+h1 {
+    font-family: ReadexPro-Medium, sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+p {
+    font-family: ReadexPro-Light, sans-serif;
+    font-weight: 300px;
+}
+b {
+    font-family: ReadexPro-Medium, sans-serif;
+    font-weight: 500;
+}
+body {
+    background-color: #dfe4ea;
+}
+
+.main {
+    margin: auto;
+    min-width: 500px;
+    max-width: 900px;
+    padding-top: 100px;
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+
+.background {
+    margin: auto;
+    min-width: 500px;
+    background-color: white;
+    padding: 50px;
+    height: auto;
+    filter: drop-shadow(0 0 0.75rem rgb(206, 206, 206));
+}
+
+.listItem {
+    margin: auto;
+    background-color: white;
+}
+
+.listItem:hover {
+    background-color: #dfe4ea;
+}
+
+.list {
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 500px;
+    max-width: 900px;
+    height: auto;
+    min-width: 500px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #a4b0be;
+    background-color: #f1f2f6;
+}
+.footer {
+    position: fixed;
+    min-width: 500px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0px;
+    height: 30px;
+    margin: auto;
+    padding: 20px;
+}
+.footerText {
+    text-align: center;
+    color: #747d8c;
+}
+a {
+    text-decoration: underline;
+    color: #747d8c;
+}
+a:hover {
+    color: #57606f;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    /*margin-left: -35;*/
+    padding: 0px;
+}
+
+ul li::marker {
+    opacity: 0;
+}
+
+li {
+    border: 1px solid;
+    border-color: #ced6e0;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #2f3542;
+    font-family: ReadexPro-Light, sans-serif;
+}
+
+ input[type=text] {
+    width: 75%;
+    height: 50px;
+    float: left;
+    font-family: ReadexPro-Light, sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+
+ }
+ input[type=submit] {
+    border: none;
+    border-radius: 2px;
+    width: 20%;
+    height: 55px;
+    color: white;
+    background-color:#1e90ff;
+    font-family: ReadexPro-Light, sans-serif;
+    font-size: 16px;
+ }
+ input[type=submit]:hover {
+    background-color:#0e80f1;
+ }
+ input[type=submit]:active {
+    background-color:rgb(5, 103, 201);
+ }
