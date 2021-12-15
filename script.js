@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    let tasksCompleted = 0;
+    // let tasksCompleted = 0;
 
     $("form").on("submit", function (event) {
         event.preventDefault();
@@ -12,15 +12,15 @@ $(document).ready(function () {
         }
     });
 
-    $('ul.tasks').on('click', 'li', function () {
-        if ($(this).hasClass("completed") === true) {
-        } else {
-            $(this).addClass('completed');
-            tasksCompleted = tasksCompleted + 1;
+    // $('ul.tasks').on('click', 'li', function () {
+    //     if ($(this).hasClass("completed") === true) {
+    //     } else {
+    //         $(this).addClass('completed');
+    //         tasksCompleted = tasksCompleted + 1;
 
-            if (tasksCompleted > 0) {
-                $("p.tasksCompleted").html(`You've completed <strong>${tasksCompleted}</strong> tasks!`);
-            }
-        }
-    });
+    //         if (tasksCompleted > 0) {
+    //             $("p.tasksCompleted").html(`You've completed <strong>${tasksCompleted}</strong> tasks!`);
+    //         }
+    //     }
+    // });
 });
